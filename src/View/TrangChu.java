@@ -81,7 +81,6 @@ public class TrangChu extends javax.swing.JFrame {
         }
         loadTableTrangChu();
         myInit();
-        clickdetail();
     }
     
    
@@ -1027,28 +1026,6 @@ public class TrangChu extends javax.swing.JFrame {
         });
     }
     
-    public void clickdetail() {
-        tblLopTrucNhat.addMouseListener(new MouseAdapter() {
-            
-            @Override
-            public void mouseClicked(MouseEvent e) {
-                if (e.getClickCount() == 2) {
-                    int selectedRow = tblLopTrucNhat.getSelectedRow();
-                    String classID = (String) tblLopTrucNhat.getValueAt(selectedRow, 0);
-                    
-                    showClassDetail(classID, selectedRow); // mở trang detail
-                    dispose();//dong trang cũ
-                }
-            }
-        });
-    }
-    
-    public void showClassDetail(String classID, int selectedRow) {
-        // Gọi lại interface để chuyển sang JFrame chi tiết
-        ChiTietQLTN detailFrame = new ChiTietQLTN(classID, selectedRow, this);
-        detailFrame.setVisible(true);
-    }
-
     /**
      * @param args the command line arguments
      */
