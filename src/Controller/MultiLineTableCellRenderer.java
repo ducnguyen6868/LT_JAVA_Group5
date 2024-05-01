@@ -18,7 +18,7 @@ import javax.swing.table.DefaultTableCellRenderer;
  */
 public class MultiLineTableCellRenderer extends DefaultTableCellRenderer {
     
-}@Override
+	@Override
     public Component getTableCellRendererComponent(JTable table, Object value, boolean isSelected, boolean hasFocus, int row, int column) {
           JPanel panel = new JPanel();
         panel.setLayout(new BorderLayout());
@@ -59,3 +59,4 @@ public class MultiLineTableCellRenderer extends DefaultTableCellRenderer {
 
         return panel;
     }
+}
