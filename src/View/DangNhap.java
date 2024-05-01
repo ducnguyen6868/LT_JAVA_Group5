@@ -6,6 +6,7 @@ package View;
 
 import Models.Account;
 import View.TrangChu;
+import View.TrangChuSinhVien;
 import java.awt.Color;
 import java.awt.Component;
 import javax.swing.ImageIcon;
@@ -219,6 +220,11 @@ ArrayList<Account> list = new ArrayList<Account>();
                             i++;
                             TrangChu a = new TrangChu();
                             a.setVisible(true);
+                            dispose();
+                        } else {
+                            TrangChuSinhVien b = new TrangChuSinhVien(txtTenDN.getText());
+                            b.setVisible(true);
+                            i++;
                             dispose();
                         }
                     }

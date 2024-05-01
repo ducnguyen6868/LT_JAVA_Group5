@@ -14,7 +14,7 @@ import javax.swing.table.AbstractTableModel;
 
 /**
  *
- * @author HP
+ * @author vkc
  */
 
 public class TableTrangChuSinhVien extends AbstractTableModel{
